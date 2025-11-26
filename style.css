@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Science Gothic", sans-serif;
+}
+
+body{
+    background-color: rgb(188, 195, 197);
+
+}
+
+h1{
+    font-size: 60px;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+.input-container input[type='text']{
+    width: 70%;
+}
+
+.input-container input[type='button']{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    cursor: url(/icons/add.svg) 12 12, pointer;
+    padding: 12px 16px;
+    margin-left: 6px;
+}
+
+.input-container input[type='button']:hover{
+    background-color: #2a6c2a;
+}
+
+ul{
+    width: 100%;
+    max-width: 450px;
+    margin-top: 30px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+ul li{
+    background-color: white;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-block-end: 12px;
+    border: 1px solid rgb(121, 126, 132);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button{
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.editButton{
+    background-color: rgb(7, 191, 212);
+    color: rgb(46, 43, 43);
+    margin: 6px;
+}
+
+.editButton:hover{
+    cursor: url(/icons/edit.svg) 12 12, pointer;
+}
+
+.removeButton{
+    background-color: rgb(206, 9, 9);
+    color: rgb(46, 43, 43);
+}
+
+.removeButton:hover {
+    cursor: url(/icons/close.svg) 12 12, pointer;
+}
